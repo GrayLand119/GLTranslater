@@ -11,8 +11,8 @@ import shutil
 # sys.setdefaultencoding('utf-8')
 
 YOUDAO_URL = 'http://openapi.youdao.com/api'
-APP_KEY = '5fd6c2bacd54b38f'
-APP_SECRET = 'mNwKLRJudytga3k6RZZBZ0qx6j7vcwOR'
+APP_KEY = '请输入在有道平台注册得到的 APP_KEY'
+APP_SECRET = '请输入在有道平台注册得到的 APP_SECRET'
 
 
 def encrypt(signStr):
@@ -60,7 +60,7 @@ def translateWithSentence(sentence: str):
 if __name__ == '__main__':
     curDir = os.getcwd() + "/"
     proccessedDir = curDir + "Proccessed/"
-    translatedDir = curDir + "Transalted/"
+    translatedDir = curDir + "Translated/"
     fileDir = curDir + "WaitToTranslate/"
     fileList = os.listdir(fileDir)
     print(fileList)
